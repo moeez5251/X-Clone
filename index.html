@@ -11,64 +11,96 @@
 </head>
 
 <body class="bg-black text-white">
-    <div class="flex container m-auto ">
-        <div class="first w-[50%] flex items-center flex-col gap-6 ">
-            <div class="logo invert relative m-6 -left-12">
-
-                <svg xmlms="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="w-9 ">
-                    <g>
-                        <path
-                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
-                        </path>
-                    </g>
-                </svg>
-            </div>
-            <div class="sidebar">
-                <ul class="flex  flex-col justify-center items-start gap-4">
+    <div class="flex container  md:m-auto m-0">
+        <div class="first md:w-[50%] flex items-center flex-col w-14 ">
+            <div class="sidebar sticky top-0 ">
+                <div class="logo invert relative m-6 ">
+    
+                    <svg xmlms="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="w-9 ">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <ul class="flex  flex-col justify-center md:items-start gap-4">
                     <li
                         class="flex justify-center items-center gap-6 text-[22px] p-2 px-4   hover:bg-[#373737] hover:rounded-3xl hover: cursor-pointer font-medium">
                         <span class="material-symbols-outlined text-2xl">
                             home
-                        </span> Home
+                        </span>
+                        <span class="hidden lg:block">
+
+                            Home
+                        </span>
                     </li>
                     <li
                         class="flex justify-center items-center gap-6 text-[22px] p-2 px-4 hover:bg-[#373737] hover:rounded-3xl hover: cursor-pointer  font-medium">
                         <span class="material-symbols-outlined">
                             search
-                        </span>Explore
+                        </span>
+                        <span class="hidden lg:block">
+
+                            Explore
+                        </span>
                     </li>
                     <li
                         class="flex justify-center items-center gap-6 text-[22px] p-2 px-4 hover:bg-[#373737] hover:rounded-3xl hover: cursor-pointer font-medium">
                         <span class="material-symbols-outlined">
                             notifications
-                        </span>Notifications
+                        </span>
+                        <span class="hidden lg:block">
+
+                            Notifications
+                        </span>
                     </li>
                     <li
                         class="flex justify-center items-center gap-6 text-[22px] p-2 px-4 hover:bg-[#373737] hover:rounded-3xl hover: cursor-pointer font-medium">
                         <span class="material-symbols-outlined">
                             mail
-                        </span> Message
+                        </span>
+                        <span class="hidden lg:block">
+
+                            Message
+                        </span>
                     </li>
                     <li
                         class="flex justify-center items-center gap-6 text-[22px] p-2 px-4 hover:bg-[#373737] hover:rounded-3xl hover: cursor-pointer font-medium">
                         <span class="material-symbols-outlined">
                             trending_up
                         </span>
-                        Grok
+                        <span class="hidden lg:block">
+
+                            Grok
+                        </span>
                     </li>
                     <li
                         class="flex justify-center items-center gap-6 text-[22px] p-2 px-4 hover:bg-[#373737] hover:rounded-3xl hover: cursor-pointer font-medium">
                         <span class="material-symbols-outlined">
                             person
                         </span>
-                        Profile
+                        <span class="hidden lg:block">
+
+                            Profile
+                        </span>
                     </li>
                     <li
                         class="flex justify-center items-center gap-6 text-[22px] p-2 px-4 hover:bg-[#373737] hover:rounded-3xl hover: cursor-pointer font-medium">
                         <span class="material-symbols-outlined">
                             more_vert
                         </span>
-                        More
+                        <span class="hidden lg:block">
+
+                            More
+                        </span>
+                    </li>
+                    <li class="mx-3 w-full relative">
+                        <button class="bg-[#1d9bf0] w-full py-3 rounded-full font-bold text-xl hidden lg:block">Post</button>
+                        <button class="bg-[#1d9bf0] w-fit p-2 rounded-full font-bold text-xl block md:hidden absolute left-[13px]">
+                            <img class="w-5 invert " src="pencil.svg" alt="">
+                        </button>
+
                     </li>
                 </ul>
             </div>
@@ -84,42 +116,163 @@
                 <div class="img">
                     <img class="rounded-full" src="Images/User.jpg" alt="">
                 </div>
-                <input class="w-full bg-black text-white focus: outline-none text-lg" type="text" placeholder="What is happening?!">
+                <input class="w-full bg-black text-white focus: outline-none text-lg" type="text"
+                    placeholder="What is happening?!">
             </div>
             <div class="flex items-center mx-[49px] my-1 gap-1 py-2 border-b cursor-pointer border-[#373737]">
                 <span class="material-symbols-outlined text-[#1d9bf0] text-[15px] font-medium">
                     globe_asia
-                    </span>
-                    <span class="text-[#1d9bf0] text-[15px] font-medium ">
-                        Everyone can reply
-                    </span>
+                </span>
+                <span class="text-[#1d9bf0] text-[15px] font-medium ">
+                    Everyone can reply
+                </span>
             </div>
             <div class="flex  justify-between px-12 py-4 border-b border-[#373737]">
                 <div class="flex  items-center gap-3">
 
-                    <span class="material-symbols-outlined text-[#1d9bf0] ">
+                    <span class="material-symbols-outlined text-[#1d9bf0] cursor-pointer ">
                         image
                     </span>
-                    <span class="material-symbols-outlined text-[#1d9bf0] ">
+                    <span class="material-symbols-outlined text-[#1d9bf0]  cursor-pointer">
                         gif_box
+                    </span>
+                    <span class="material-symbols-outlined text-[#1d9bf0] cursor-pointer ">
+                        ballot
+                    </span>
+                    <span class="material-symbols-outlined text-[#1d9bf0]  cursor-pointer">
+                        mood
+                    </span>
+                    <span class="material-symbols-outlined text-[#1d9bf0]  cursor-pointer">
+                        schedule
+                    </span>
+                    <span class="material-symbols-outlined text-[#1d9bf0] cursor-pointer ">
+                        location_on
+                    </span>
+                </div>
+                <button class=" bg-[#1d9bf0] px-5 py-2 rounded-full font-bold">Post</button>
+            </div>
+            <div class="posts flex  p-4 relative flex-col border-b border-[#37373]">
+                <div class="flex items-center gap-2">
+
+                    <div class="image">
+
+                        <img class="rounded-full w-11" src="Images/Elone.jpg" alt="">
+                    </div>
+                    <div class="content flex items-center gap-2">
+                        <span class="font-bold cursor-pointer hover:underline">Elon Musk
                         </span>
-                        <span class="material-symbols-outlined text-[#1d9bf0] ">
-                            ballot
-                            </span>
-                            <span class="material-symbols-outlined text-[#1d9bf0] ">
-                                mood
-                                </span>
-                                <span class="material-symbols-outlined text-[#1d9bf0] ">
-                                    schedule
-                                    </span>
-                                    <span class="material-symbols-outlined text-[#1d9bf0] ">
-                                        location_on
-                                    </span>
-                                </div>
-                                <button class="disabled: bg-[#1d9bf0] px-5 py-2 rounded-full font-bold">Post</button>
+                        <img class="w-5" src="tick.svg" alt="">
+                    </div>
+                    <span class="text-[#575b5f] cursor-pointer ">@elonmusk</span>
+                    <span class="text-[#575b5f]">.</span>
+                    <span class="text-[#575b5f]">10h</span>
+                    <span class="material-symbols-outlined absolute right-2 top-0 text-[#575b5f] cursor-pointer">
+                        more_horiz
+                    </span>
+                </div>
+
+                <div class="video h-[500px] w-[80%] m-auto overflow-hidden">
+                    <video class="object-cover w-[100%] h-[100%] border-[1px] border-[#373737] rounded-xl"
+                        src="Video.mp4" controls muted></video>
+                </div>
+                <div class="icon flex m-8 justify-between ">
+                    <div class="flex items-center gap-2 text-[#575b5f] cursor-pointer hover:text-[#1d9bf0]">
+                        <span class="material-symbols-outlined  ">
+                            chat_bubble
+                        </span>
+                        <span>6.8k</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-[#575b5f]  cursor-pointer hover:text-[#80ffaa]">
+                        <span class="material-symbols-outlined">
+                            repeat
+                        </span>
+                        <span>22k</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-[#575b5f] cursor-pointer hover:text-[#fa83d2]">
+                        <span class="material-symbols-outlined ">
+                            favorite
+                        </span>
+                        <span>166k</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-[#575b5f] cursor-pointer hover:text-[#1d9bf0]">
+                        <span class="material-symbols-outlined ">
+                            signal_cellular_alt
+                        </span>
+                        <span>17M</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-[#575b5f]">
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#1d9bf0]">
+                            bookmark
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#1d9bf0]">
+                            ios_share
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="posts flex  p-4 relative flex-col border-b border-[#37373]">
+                <div class="flex items-center gap-2">
+
+                    <div class="image">
+
+                        <img class="rounded-full w-11" src="Images/Elone.jpg" alt="">
+                    </div>
+                    <div class="content flex items-center gap-2">
+                        <span class="font-bold cursor-pointer hover:underline">Elon Musk
+                        </span>
+                        <img class="w-5" src="tick.svg" alt="">
+                    </div>
+                    <span class="text-[#575b5f] cursor-pointer ">@elonmusk</span>
+                    <span class="text-[#575b5f]">.</span>
+                    <span class="text-[#575b5f]">10h</span>
+                    <span class="material-symbols-outlined absolute right-2 top-0 text-[#575b5f] cursor-pointer">
+                        more_horiz
+                    </span>
+                </div>
+
+                <div class="video h-[500px] w-[80%] m-auto overflow-hidden">
+                    <video class="object-cover w-[100%] h-[100%] border-[1px] border-[#373737] rounded-xl"
+                        src="Video.mp4" controls muted></video>
+                </div>
+                <div class="icon flex m-8 justify-between ">
+                    <div class="flex items-center gap-2 text-[#575b5f] cursor-pointer hover:text-[#1d9bf0]">
+                        <span class="material-symbols-outlined  ">
+                            chat_bubble
+                        </span>
+                        <span>6.8k</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-[#575b5f]  cursor-pointer hover:text-[#80ffaa]">
+                        <span class="material-symbols-outlined">
+                            repeat
+                        </span>
+                        <span>22k</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-[#575b5f] cursor-pointer hover:text-[#fa83d2]">
+                        <span class="material-symbols-outlined ">
+                            favorite
+                        </span>
+                        <span>166k</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-[#575b5f] cursor-pointer hover:text-[#1d9bf0]">
+                        <span class="material-symbols-outlined ">
+                            signal_cellular_alt
+                        </span>
+                        <span>17M</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-[#575b5f]">
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#1d9bf0]">
+                            bookmark
+                        </span>
+                        <span class="material-symbols-outlined cursor-pointer hover:text-[#1d9bf0]">
+                            ios_share
+                        </span>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="third b w-[70%]">
+        <div class="third b w-[70%] hidden lg:block">
             <div class="search w-4/5 m-auto">
                 <input
                     class="bg-[#373737] w-full rounded-full px-5 py-3 my-3 text-white focus:outline-none focus:outline-1 focus:outline-[#1d9bf0]"
@@ -238,4 +391,3 @@
 </body>
 
 </html>
-
